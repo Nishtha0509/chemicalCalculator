@@ -65,7 +65,7 @@ const ChemicalCALC = async () => {
     }
   //const response = await fetch('https://chemicalcalcapp.herokuapp.com/chemicalCALCapp',{
      console.log("Tulsi")                           
-    const response = await fetch("/chemicalCALC",{
+    const response = await fetch("/",{
         method: 'POST',
         body: JSON.stringify(myBody), // string or object
         headers: {
