@@ -90,9 +90,14 @@ function removeElementsByClass(className){
 }
 //console.log("Tulsi")
 function display(data) {
-   
     console.log(data)
     
+    // Check if data and required elements are defined
+    if (!data || !data[0] || !data[1] || !data[2] || !data[3]) {
+        console.error('Invalid data structure:', data);
+        return;
+    }
+
     for (let i = 0; i < data[0].length; i++) {
         var table_reactions = document.createElement("TABLE");
         var table = document.createElement("TABLE");
