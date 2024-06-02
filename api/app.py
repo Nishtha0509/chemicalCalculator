@@ -11,7 +11,7 @@ def home_view():
 
 
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
-@app.route("/", methods = ['POST','OPTIONS'])
+@app.route("/chemCalc", methods = ['POST','OPTIONS'])
 @cross_origin()
 def disp():
      body=request.json
