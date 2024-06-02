@@ -15,10 +15,10 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 @cross_origin()
 def disp():
      body=request.json
-     #print(body)
+     print(body)
      output = chemicalCALC(body)
-     #print(output)
-     return {'data': output}
+     print(output)
+     return jsonify({'data': output})
 
 
 @app.route('/')
