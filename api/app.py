@@ -11,7 +11,7 @@ def home_view():
 
 
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
-@app.route("/chemicalCALC", methods = ['POST','OPTIONS'])
+@app.route("/", methods = ['POST','OPTIONS'])
 @cross_origin()
 def disp():
      body=request.json
@@ -21,7 +21,7 @@ def disp():
      return {'data': output}
 
 
-@app.route('/download')
+@app.route('/')
 def download_file():
   p = "reaction.xml"
   result = send_file(p,as_attachment=True)
