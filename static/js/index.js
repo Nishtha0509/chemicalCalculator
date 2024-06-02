@@ -65,7 +65,7 @@ const ChemicalCALC = async () => {
     }
   //const response = await fetch('https://chemicalcalcapp.herokuapp.com/chemicalCALCapp',{
      console.log("Tulsi")                           
-    const response = await fetch("",{
+    const response = await fetch("https://chemical-calculator.vercel.app/api/chemCalc",{
         method: 'POST',
         body: JSON.stringify(myBody), // string or object
         headers: {
